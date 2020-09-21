@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<style type="text/css">
+		body{
+			background-image: url(https://cdn.pixabay.com/photo/2020/02/26/08/06/chinese-clouds-4881006_960_720.png);
+			margin: 0;
+			padding: 0;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			font-family: sans-serif;
+		}
+
+		.login{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: rgba(255,255,255,0.9);
+			padding: 20px;
+			width: 270px;
+			box-shadow: 0 0 4px 2px white;
+		}
+
+		.avatar{
+			font-size: 50px;
+			background: #bdc3c7;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			position: fixed;
+			left: 50%;
+			top: 0;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+
+		.login h2{
+			text-align: center;
+			color: black;
+			padding-top: 10px;
+			letter-spacing: 5px;
+		}
+
+		.box-login{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 15px;
+			border-bottom: solid 2px black;
+			padding: 8px 0;
+		}
+
+		.box-login i{
+			font-size: 20px;
+			color: black;
+		}
+
+		.box-login input{
+			width: 100%;
+			padding: 0 10px;
+			background: none;
+			border: none;
+			outline: none;
+			color: black;
+		}
+
+		.box-login input::placeholder{
+			color: black;
+		}
+
+		.btn-login{
+			width: 100%;
+			background: none;
+			padding: 15px;
+			border: 1px solid black;
+			font-size: 18px;
+			letter-spacing: 5px;
+			color: black;
+			cursor: pointer;
+		}
+
+		.btn-login:hover{
+			color: white;
+			background: black;
+		}
+
+		.bottom{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 10px;
+		}
+
+		.bottom a{
+			color: black;
+			font-size: 14px;
+			text-decoration: none;
+		}
+
+		.bottom a:hover{
+			text-decoration: underline;
+		}
+	</style>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+	<div class="login">
+		<div class="avatar">
+			<i class="fa fa-user"></i>
+		</div>
+		<form action="" method="post" name="input">
+			<h2>login</h2>
+			<div class="box-login">
+				<i class="fas fa-envelope"></i>
+				<input type="text" name="username" placeholder="Username">
+			</div>
+
+			<div class="box-login">
+				<i class="fas fa-lock"></i>
+				<input type="password" name="password" placeholder="Password">
+			</div>
+
+			<button type="input" name="login" class="btn-login">
+				Login
+			</button>
+		</form>
+		<div class="bottom">
+			<a href="formsignup.html">Daftar</a>
+			<a href="#">Lupa Password?</a>
+		</div>
+
+	</div>
+
+</body>
+</html>
